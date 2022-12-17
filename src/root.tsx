@@ -8,7 +8,7 @@ export default component$(() => {
   useStyles$(globalStyles);
 
   return (
-    <html lang="en-us">
+    <>
       <head>
         <meta charSet="utf-8" />
         <link rel="manifest" href="/manifest.json" />
@@ -17,6 +17,6 @@ export default component$(() => {
       <body>
         <Flower />
       </body>
-    </html>
+    </>
   );
 });

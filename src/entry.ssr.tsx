@@ -20,6 +20,9 @@ export default {
 
     renderToStream(<Root />, {
       manifest,
+      containerAttributes: {
+        lang: "en-us",
+      },
       stream,
     }).finally(() => writer.close());
 
