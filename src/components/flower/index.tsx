@@ -1,5 +1,10 @@
-import { component$, useClientEffect$, useStore, useStylesScoped$ } from '@builder.io/qwik';
-import styles from './flower.css?inline';
+import {
+  component$,
+  useClientEffect$,
+  useStore,
+  useStylesScoped$,
+} from "@builder.io/qwik";
+import styles from "./flower.css?inline";
 
 export default component$(() => {
   useStylesScoped$(styles);
@@ -29,11 +34,11 @@ export default component$(() => {
       />
       <div
         style={{
-          '--state': `${state.count * 0.1}`,
+          "--state": `${state.count * 0.1}`,
         }}
         class={{
           host: true,
-          pride: true
+          pride: true,
         }}
       >
         {Array.from({ length: state.number }, (_, i) => (
@@ -43,7 +48,7 @@ export default component$(() => {
               square: true,
               odd: i % 2 === 0,
             }}
-            style={{ '--index': `${i + 1}` }}
+            style={{ "--index": `${i + 1}` }}
           />
         )).reverse()}
       </div>

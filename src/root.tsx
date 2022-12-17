@@ -1,8 +1,8 @@
-import { component$, useStyles$ } from '@builder.io/qwik';
-import Flower from './components/flower';
-import { RouterHead } from './components/router-head/router-head';
+import { component$, useStyles$ } from "@builder.io/qwik";
+import Flower from "./components/flower";
+import { RouterHead } from "./components/router-head/router-head";
 
-import globalStyles from './global.css?inline';
+import globalStyles from "./global.css?inline";
 
 export default component$(() => {
   useStyles$(globalStyles);
