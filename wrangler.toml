@@ -1,0 +1,7 @@
+name = "qwik-workers-demo"
+main = "server/entry.ssr.js"
+assets = "./dist"
+compatibility_date = "2022-12-17"
+
+[build]
+  command = "npm run build"

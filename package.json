@@ -1,0 +1,36 @@
+{
+  "name": "qwik-workers-demo",
+  "engines": {
+    "node": ">=15.0.0"
+  },
+  "private": true,
+  "scripts": {
+    "build": "qwik build",
+    "build.client": "vite build",
+    "build.server": "vite build --ssr src/entry.ssr.tsx",
+    "check.types": "tsc --incremental --noEmit",
+    "deploy": "wrangler publish",
+    "dev": "vite --mode ssr",
+    "serve": "wrangler dev --local",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "check.lint": "eslint \"src/**/*.ts*\"",
+    "qwik": "qwik"
+  },
+  "devDependencies": {
+    "@builder.io/qwik": "0.15.2",
+    "@cloudflare/workers-types": "^4.20221111.1",
+    "@types/eslint": "8.4.10",
+    "@types/node": "^18.11.16",
+    "@typescript-eslint/eslint-plugin": "5.46.1",
+    "@typescript-eslint/parser": "5.46.1",
+    "eslint": "8.30.0",
+    "eslint-plugin-qwik": "0.15.2",
+    "node-fetch": "3.3.0",
+    "prettier": "2.8.1",
+    "typescript": "4.9.4",
+    "vite": "4.0.1",
+    "vite-tsconfig-paths": "4.0.3",
+    "wrangler": "^2.6.2"
+  }
+}
