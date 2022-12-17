@@ -1,5 +1,5 @@
 name = "qwik-workers-demo"
-main = "server/entry.ssr.js"
+main = "server/entry.worker.js"
 assets = "./dist"
 compatibility_date = "2022-12-17"
 
