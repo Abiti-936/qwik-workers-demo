@@ -18,14 +18,6 @@ export default {
 
     renderToStream({ stream }).finally(() => writer.close());
 
-    /* renderToStream(<Root />, {
-      manifest,
-      containerAttributes: {
-        lang: "en-us",
-      },
-      stream,
-    }).finally(() => writer.close()); */
-
     return new Response(readable, {
       headers: {
         "Content-Type": "text/html; charset=utf-8",
