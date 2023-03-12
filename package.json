@@ -18,7 +18,7 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.15.2",
+    "@builder.io/qwik": "0.21.0",
     "@cloudflare/workers-types": "^4.20221111.1",
     "@types/eslint": "8.21.1",
     "@types/node": "^18.11.16",
